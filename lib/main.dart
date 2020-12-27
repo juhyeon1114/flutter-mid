@@ -5,6 +5,7 @@ import 'package:flutter_mid/src/MyDrawer.dart';
 import 'package:flutter_mid/src/MySnackBar.dart';
 import 'package:flutter_mid/src/MyOrientation.dart';
 import 'package:flutter_mid/src/MyTabController.dart';
+import 'package:flutter_mid/src/MyFormValidation.dart';
 
 void main() {
   runApp(MyApp());
@@ -73,6 +74,12 @@ class _HomeState extends State<Home> {
           title: Text('MyTabController'),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) => MyTabController()));
+          },
+        ),
+        ListTile(
+          title: Text('MyFormValidation'),
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => MyFormValidation()));
           },
         ),
       ],
