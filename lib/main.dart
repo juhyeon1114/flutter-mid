@@ -7,6 +7,7 @@ import 'package:flutter_mid/src/MyOrientation.dart';
 import 'package:flutter_mid/src/MyTabController.dart';
 import 'package:flutter_mid/src/MyFormValidation.dart';
 import 'package:flutter_mid/src/MySwipeToDismiss.dart';
+import 'package:flutter_mid/src/MyMethodChannel.dart';
 
 void main() {
   runApp(MyApp());
@@ -87,6 +88,12 @@ class _HomeState extends State<Home> {
           title: Text('MySwipeToDismiss'),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) => MySwipeToDismiss()));
+          },
+        ),
+        ListTile(
+          title: Text('MyMethodChannel'),
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => MyMethodChannel()));
           },
         ),
       ],
