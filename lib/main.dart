@@ -4,6 +4,7 @@ import 'package:flutter_mid/src/MyAnimatedOpacity.dart';
 import 'package:flutter_mid/src/MyDrawer.dart';
 import 'package:flutter_mid/src/MySnackBar.dart';
 import 'package:flutter_mid/src/MyOrientation.dart';
+import 'package:flutter_mid/src/MyTabController.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        // primarySwatch: Colors.grey,
+        brightness: Brightness.light,
+        primaryColor: Colors.blue,
+        accentColor: Colors.red,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
@@ -63,6 +67,12 @@ class _HomeState extends State<Home> {
           title: Text('MyOrientation'),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) => MyOrientation()));
+          },
+        ),
+        ListTile(
+          title: Text('MyTabController'),
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => MyTabController()));
           },
         ),
       ],
