@@ -8,6 +8,7 @@ import 'package:flutter_mid/src/MyTabController.dart';
 import 'package:flutter_mid/src/MyFormValidation.dart';
 import 'package:flutter_mid/src/MySwipeToDismiss.dart';
 import 'package:flutter_mid/src/MyMethodChannel.dart';
+import 'package:flutter_mid/src/MySlider.dart';
 
 void main() {
   runApp(MyApp());
@@ -94,6 +95,12 @@ class _HomeState extends State<Home> {
           title: Text('MyMethodChannel'),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) => MyMethodChannel()));
+          },
+        ),
+        ListTile(
+          title: Text('MySlider'),
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => MySlider()));
           },
         ),
       ],
